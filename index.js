@@ -21,7 +21,8 @@ function viewCart() {
   if (cart.length === 0) {
     return console.log('Your shopping cart is empty.');
   } else if (cart.length === 1) {
-    return console.log(`In your cart, you have ${Object.keys(cart[0])[0]} at \$${cart[0][0]}.`);
+    var item = Object.keys(cart[0])[0]
+    return console.log(`In your cart, you have ${item} at \$${cart[0][item]}.`);
   }
 }
 
