@@ -30,11 +30,15 @@ function viewCart() {
   } else {
     var items = []
     var itemString = 'In your cart, you have '
-    for (i = 0; i < cart.length; i++) {
+    var i = 0
+    var j = 0
+    while (i < cart.length) {
       items.push(Object.keys(cart[i])[0])
+      i++
     }
-    for (i = 0; i < items.length - 1 || i === 0; i++) {
+    while (j < items.length - 1 || j === 0) {
       itemString += `${items[i]} at \$${cart[i][items[i]]}, `
+      j++
     }
     var lastItem = Object.keys(cart[cart.length - 1])[0]
     itemString += `and ${lastItem} at \$${cart[cart.length - 1][lastItem]}.`
