@@ -54,7 +54,6 @@ function total() {
     result += cart[i][item]
     i++
   }
-  console.log(result)
   return result
 }
 
@@ -66,8 +65,8 @@ function placeOrder(cardNumber) {
   // write your code here
 }
 
-addToCart('eggs')
-addToCart('potatoes')
-addToCart('milk')
-viewCart()
-total()
+// addToCart('eggs')
+// addToCart('potatoes')
+// addToCart('milk')
+// viewCart()
+// total()
