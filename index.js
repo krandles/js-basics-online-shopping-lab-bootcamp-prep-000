@@ -37,5 +37,5 @@ function placeOrder(cardNumber) {
   // write your code here
 }
 
-addToCart(eggs)
+addToCart('eggs')
 viewCart()
