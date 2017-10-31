@@ -19,9 +19,9 @@ function addToCart(item) {
 function viewCart() {
   var items = Object
   if (cart.length === 0) {
-    return console.log('Your shopping cart is empty.')
+    return console.log('Your shopping cart is empty.');
   } else if (cart.length === 1) {
-    return console.log(`In your cart, you have ${Object.keys(cart[0])[0]} at \$${cart[0][0]}`)
+    return console.log(`In your cart, you have ${Object.keys(cart[0])[0]} at \$${cart[0][0]}.`);
   }
 }
 
@@ -36,3 +36,6 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   // write your code here
 }
+
+addToCart(eggs)
+viewCart()
