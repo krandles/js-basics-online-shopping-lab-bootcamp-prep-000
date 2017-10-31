@@ -47,7 +47,12 @@ function viewCart() {
 }
 
 function total() {
-  // write your code here
+  result = 0
+  i = 0
+  while (i < cart.length){
+    result += cart[i][0]
+  }
+  return result
 }
 
 function removeFromCart(item) {
@@ -58,7 +63,7 @@ function placeOrder(cardNumber) {
   // write your code here
 }
 
-addToCart('eggs')
-addToCart('potatoes')
-addToCart('milk')
-viewCart()
+// addToCart('eggs')
+// addToCart('potatoes')
+// addToCart('milk')
+// viewCart()
