@@ -27,6 +27,18 @@ function viewCart() {
     var item1 = Object.keys(cart[0])[0]
     var item2 = Object.keys(cart[1])[0]
     return console.log(`In your cart, you have ${item1} at \$${cart[0][item1]} and ${item2} at \$${cart[1][item2]}.`);
+  } else {
+    var items = []
+    var itemString = 'In your cart, you have '
+    for (i = 0; i < cart.length; i++) {
+      items.push(Object.keys(cart[i])[0])
+    }
+    for (i = 0; i < items.length - 1 || i === 0; i++) {
+      itemString += `${items[i]} at \$${cart[i][items[i]]}, `
+    }
+    var lastItem = Object.keys(cart[cart.length - 1])[0]
+    itemString += `and ${lastItem} at \$${cart[cart.length - 1])[lastItem]}.`
+    return itemString
   }
 }
 
