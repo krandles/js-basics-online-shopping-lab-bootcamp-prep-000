@@ -37,7 +37,7 @@ function viewCart() {
       itemString += `${items[i]} at \$${cart[i][items[i]]}, `
     }
     var lastItem = Object.keys(cart[cart.length - 1])[0]
-    itemString += `and ${lastItem} at \$${cart[cart.length - 1])[lastItem]}.`
+    itemString += `and ${lastItem} at \$${cart[cart.length - 1][lastItem]}.`
     return itemString
   }
 }
@@ -54,5 +54,5 @@ function placeOrder(cardNumber) {
   // write your code here
 }
 
-addToCart('eggs')
-viewCart()
+// addToCart('eggs')
+// viewCart()
