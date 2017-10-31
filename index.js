@@ -51,6 +51,7 @@ function total() {
   var i = 0
   while (i < cart.length){
     result += cart[i][0]
+    i++
   }
   return result
 }
