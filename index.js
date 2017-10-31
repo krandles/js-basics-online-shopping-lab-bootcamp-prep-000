@@ -37,7 +37,7 @@ function viewCart() {
       i++
     }
     while (j < items.length - 1 || j === 0) {
-      itemString += `${items[i]} at \$${cart[i][items[i]]}, `
+      itemString += `${items[j]} at \$${cart[j][items[j]]}, `
       j++
     }
     var lastItem = Object.keys(cart[cart.length - 1])[0]
