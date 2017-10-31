@@ -42,7 +42,7 @@ function viewCart() {
     }
     var lastItem = Object.keys(cart[cart.length - 1])[0]
     itemString += `and ${lastItem} at \$${cart[cart.length - 1][lastItem]}.`
-    return itemString
+    return console.log(itemString)
   }
 }
 
