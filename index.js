@@ -53,6 +53,7 @@ function total() {
     result += parseInt(cart[i][0])
     i++
   }
+  console.log(result)
   return result
 }
 
@@ -64,7 +65,7 @@ function placeOrder(cardNumber) {
   // write your code here
 }
 
-// addToCart('eggs')
-// addToCart('potatoes')
-// addToCart('milk')
-// viewCart()
+addToCart('eggs')
+addToCart('potatoes')
+addToCart('milk')
+viewCart()
