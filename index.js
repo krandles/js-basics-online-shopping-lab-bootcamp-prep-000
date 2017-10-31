@@ -47,7 +47,7 @@ function viewCart() {
 }
 
 function total() {
-  result = 0
+  var result = 0
   i = 0
   while (i < cart.length){
     result += cart[i][0]
