@@ -50,7 +50,7 @@ function total() {
   var result = 0
   var i = 0
   while (i < cart.length){
-    result += parseInt(cart[i][0])
+    result += parseInt(cart[i])[0]
     i++
   }
   console.log(result)
